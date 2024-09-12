@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <div class="theme-toggle">
+        <input type="checkbox" id="dark-mode-toggle">
+        <label for="dark-mode-toggle" class="toggle-label">Dark Mode</label>
+    </div>
+    <div class="container">
+        <div class="left-section">
+            <div class="logo">
+                <!-- Add logo image here if needed -->
+            </div>
+            <ul class="plan-features">
+                <li><span>&#10003;</span> Unlimited time travel</li>
+                <li><span>&#10003;</span> 24/7 personal relationship advice</li>
+                <li><span>&#10003;</span> Control the weather</li>
+                <li><span>&#10003;</span> Ability to read people's thoughts</li>
+            </ul>
+        </div>
+        <div class="right-section">
+            <div class="login-form">
+                <h1>Login</h1>
+                <p>Login using your account</p>
+                <div class="social-login">
+                    <button class="social-btn google">Google</button>
+                    <button class="social-btn apple">Apple</button>
+                </div>
+                <p>Or login with your email</p>
+                <form action="/login" method="POST">
+                    <label for="email">Email address</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required>
+
+                    <button type="submit" class="signup-btn">Login</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
